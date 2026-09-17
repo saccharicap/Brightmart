@@ -4,7 +4,7 @@ import numpy as np
 import pandas
 
 # Load the saved model
-model = pandas.read_spss('linear_regression_model.sav', 'rb')
+model = joblib.load(open('linear_regression_model.sav', 'rb'))
 
 st.title('Sales Prediction App')
 
