@@ -3,7 +3,7 @@ import joblib
 import numpy as np
 
 # Load the saved model
-model = pickle.load(open('linear_regression_model.sav', 'rb'))
+model = sav.load(open('linear_regression_model.sav', 'rb'))
 
 st.title('Sales Prediction App')
 
